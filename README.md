@@ -10,6 +10,7 @@ Interactions with the In-Memory-Database can be done within the main-method() of
 - inmemoryDB.commit();
 - inmemoryDB.rollback();
 
-The example code from Figure 2 can be run and its output displayed by calling the "example()" method within the Main.
+To see the values of the database, you have to print out (eg. System.out.print) in conjunction with the "inmemory.get(key)"-method. Any exceptions will terminate the program, useless used in a try-catch block. The example code from Figure 2 can be run and its output displayed by calling the "example()" method within the Main.
+
 ## Write-Up
 Thinking about a database solution that allows for rollbacks was interessting. But this assignment lacks in-depth, as problems like dirty-writes and write-read-conflicts mostly happen with simultaneous accesses to a database. Adding this aspect could elevate this assigment. Alternatively, students could perform a write-up or inspection on database problems that can occure.
